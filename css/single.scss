@@ -1,0 +1,157 @@
+  $body:linear-gradient(to right, #eea2a2 0%, #bbc1bf 19%, #57c6e1 42%, #b49fda 79%, #7ac5d8 100%);
+  @import 'theme.scss';
+.single-page{
+  width:100%;
+  background:$body;
+  color:$activeColor;
+ min-height:100vh;
+  direction: rtl;
+  display: inline-block;
+
+.left{
+  float:$floatR;
+  width:50%;
+  .product-view{
+  position:relative;
+  overflow:hidden;
+  
+  .single{
+    width:100%;
+    max-height:100vh;
+    min-height:100vh;
+    overflow:hidden;
+  }
+  span{
+    position:absolute;
+    top:5%;
+    font-size:30px;
+    color:#777acc;
+    cursor:pointer;
+    height:30px;
+    width:30px;
+    border-radius:50%;
+    text-align:center;
+    background:$activeColor;
+    &:hover{
+      color:$body;
+      background:$hoverBg;
+    }
+
+  }
+  .fa-angle-right{
+    right:0;
+    float:$floatL;
+  }
+  .fa-angle-left{
+    left:0;
+    float:$floatR;
+  }
+  .slider{
+    text-align:center;
+    img{
+      width:70px;
+      height:70px;
+      display:inline-block;
+      margin-right:5px;
+      border-radius:5px
+      
+    }
+  }
+}
+  }
+.right{
+  background:$body;
+  width:50%; 
+  float:$floatR;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  
+  .product-info{
+  padding: 20px;
+  padding-top:30px;
+    border-left:1px solid #5e5e5e;
+
+  h2,h3{
+    margin-bottom:10px
+  }
+    h2{
+      margin-right:10px;
+    }
+  ol{
+    margin:0;
+    color:$color;
+    font-size:18px;
+     margin:10px 35px;
+    li{
+      margin-bottom:5px;
+    }
+  }
+  .colors{
+    display:inline-block;
+    margin-bottom:20px;
+    margin-top:30px;
+    div{
+    width:30px;
+    height:30px;
+    border:1px solid #eee;
+    border-radius:50%;
+    float:$floatR;
+     text-align:center;
+      line-height:30px;
+      margin-right:5px;
+      cursor:pointer;
+      margin-top:30px;
+      span{
+        display: none;
+      }
+    }
+      .Chosen{
+        &:before{
+        content: "\f00c";
+        font: normal normal normal 14px/1 FontAwesome;
+        
+      }
+      }
+     
+  }
+  .actions{
+    font-size:25px;
+  .price{
+    float:$floatR;
+    display:inline-block;
+    padding:10px;
+
+  }
+  .btn{
+    float:$floatL;
+    border-radius:20%;
+    padding:10px;
+    font-weight:bold;
+    background:#7f1d57;color:#fff;
+      
+  }
+  }
+    .related{
+      display:inline-block;
+      text-align:center;
+      margin-top:20px;
+      h2{
+        display:block;
+        text-align:left
+      }
+      .related-item{
+        margin-right:10px;
+        overflow:hidden;
+        img{
+        height:100px;
+          width:100%;
+        }
+      }
+      a{
+        @extend .btn;
+      }
+    }
+}
+  }
+}

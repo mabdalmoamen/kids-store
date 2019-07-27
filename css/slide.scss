@@ -1,0 +1,199 @@
+// ?Slider Style 
+ .slider-style{
+  width:100%;
+  height:400px;
+  color:$mainColor;
+  margin:10px auto;
+  margin-bottom: 20px;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  direction: rtl;
+  margin-right: 20%;
+  border-radius: 8px;
+  clear: both;
+
+  .sliderImgs {
+    height:400px;
+    width:100%;
+    overflow-x: hidden;
+    display: block;
+
+     .sliderCount{
+    z-index: 9999;
+    transition: opacity 1s;
+    font-weight: bold;
+    color:$activeColor;
+    float:$floatL;
+    display: none;
+    background: $bg;
+    height:400px;
+    width: 50%;
+    text-align: $floatR;
+    padding: 20px; 
+    h3{
+      background: $hotColor;
+      padding: 12px;
+      color: $mainColor;
+      
+    border-bottom-right-radius: 50%;
+    border-top-left-radius: 50%;
+    margin-bottom: 30px;
+    }
+    h1{
+      display: block;
+    }
+     
+  .brand-disc{
+    letter-spacing: 1px;
+    font-size: 18px;
+    font-weight: bold;
+    float: $floatR;
+        margin-bottom: 20px;
+        @extend .btn; 
+             background: $body;
+             padding: 15px;
+
+
+  }
+  .brand-age{
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    line-height: 70px;
+ 
+    border-bottom-right-radius: 50%;
+    border-top-left-radius: 50%;  
+     float:$floatL;
+        margin-bottom: 20px;
+         background: $hotColor;
+     color: $mainColor;
+      position: absolute;
+    left:0;
+    bottom: 20%;
+  }
+
+
+    button{
+     display: block;
+    text-align: center;
+    cursor: pointer;
+    width: 50%;
+    padding: 10px;
+    background: $hotColor;
+    color:$hoverBg;
+    border: 1px solid $activeColor;
+    font-weight: bold;
+    font-size: 20px;
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+
+    }
+  }
+    img{
+    display: none;
+    transition: opacity 1s;
+    width:50%;
+     z-index:0;
+     float:$floatR;
+     height:400px;
+ 
+  }
+  .deal{
+position: absolute;
+    z-index: 999;
+    color: $mainColor;
+    height: 55px;
+    width: 55px;
+    border-radius: 50%;
+    background: $hotColor;
+    text-align: center;
+    line-height: 15px;
+    display: none;
+    padding: 10px;
+     top: 30%; 
+      right:0;
+     font-weight:bold;
+     
+    border-bottom-right-radius: 50%;
+    border-top-left-radius: 50%;
+     .sale{
+         position: relative;
+    right: 280px;
+     top: 110px;
+     height: 55px;
+    width: 55px;
+    border-radius: 50%;
+    background: $hotColor;
+     color: $mainColor;
+
+    text-align: center;
+    line-height: 20px;
+    float: $floatL;
+     
+    border-bottom-right-radius: 50%;
+    border-top-left-radius: 50%;
+     }   
+
+  }
+  .active{
+      opacity: 1;
+      display: block
+    }
+  }
+  .actions{
+    width: 100%;
+    margin: auto;
+    float: $floatR;
+    position: relative;
+    top:-200px;
+    .bullets-container{
+      display: none;
+      width: 60%;
+        float: $floatR;
+      ul{
+        list-style: none;
+        margin: 0;
+        text-align: center;
+        li{
+          display: inline-block;
+          margin-right: 2px;
+          width: 28px;
+          height: 28px;
+          border-radius: 4px;
+          line-height: 28px;
+           background: $bg;
+      cursor: pointer;
+        }
+        .active{
+          background:$hoverBg;
+        }
+      }
+    }
+    .nextBtn,.prevBtn{
+      width:30px;
+      height: 30px;
+          border-radius:50%;
+          line-height: 28px;
+      background: $bg;
+      text-align: center;
+      cursor: pointer;
+
+
+    }
+    .nextBtn{
+      float:$floatL;
+    }
+    .prevBtn{
+      float:$floatR;
+
+    }
+    .nextBtn.disabled,.prevBtn.disabled{
+      background:#7a7777;
+      cursor:none;
+      user-select:none;
+    }
+  }
+
+}

@@ -1,0 +1,77 @@
+ // /* Extra small devices (phones, less than 768px) */
+  // /* No media query since this is the default in Bootstrap */
+
+  // /* Small devices (tablets, 768px and up) */
+@media screen and (max-width:768px){
+  $grid: 12;
+  @for $i from 1 through $grid {
+   .col-sm-#{$i}{
+      width: 100%/ ($grid / $i);
+      float: $floatR;
+      text-align: $floatR
+    }
+  }
+  .toolbar{
+    display: none;
+  }
+  .nav {
+        margin-bottom: 20px;
+    ul{
+      li{
+        margin-bottom: 10px;
+      }
+    }
+  }
+  .slider{
+    padding: 0;
+    margin:0;
+     .sale{
+          right: 320px!important;
+
+    }
+  }
+}
+@media screen and (min-width:768px)and (max-width: 900px){
+  $grid: 12;
+  @for $i from 1 through $grid {
+   .col-md-#{$i}{
+      width: 100%/ ($grid / $i);
+      float: $floatR;
+      text-align: $floatR
+    }
+  }
+  .toolbar{
+    top:20%!important;
+  }
+  .nav {
+        margin-bottom: 20px;
+    ul{
+      li{
+        margin-bottom: 10px;
+      }
+    }
+  }
+  .slider{
+    padding: 0;
+    margin:0;
+    .sale{
+          right: 320px!important;
+
+    }
+  }
+}
+h2,h1,h3{
+display: block!important;
+width: auto;
+text-align: center
+}
+  // /* Medium devices (desktops, 992px and up) */
+  // @media (min-width: @screen-md-min) { ... }
+
+  //  Large devices (large desktops, 1200px and up) 
+  // @media (min-width: @screen-lg-min) { ... }
+  // @media (max-width: @screen-xs-max) { ... }
+  // @media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) { ... }
+  // @media (min-width: @screen-md-min) and (max-width: @screen-md-max) { ... }
+  // @media (min-width: @screen-lg-min) { ... }
+  //   

@@ -1,0 +1,38 @@
+
+.col-8.col-sm-12.col-md-12
+    .slider.slider-style
+      .sliderImgs#sliderImgs
+        -
+         var slides=[
+          {id:1,type:'قميص',img:'girls/1.jpg',disc:'منتج مميز مناسب للاطفال من سن ',rate:'6',stock:10,sale:'50%',age:'2-5 شهور'},
+          {id:2,type:'قميص',img:'boys/5.jpg',disc:'منتج مميز مناسب للاطفال من سن ',rate:'6',stock:10,sale:'40%',age:'2-10 شهور'},
+          {id:3,type:'قميص',img:'girls/2.jpg',disc:'منتج مميز مناسب للاطفال من سن ',rate:'5',stock:10,sale:'30%',age:'2-5 سنوات'},
+          {id:4,type:'قميص',img:'boys/3.jpg',disc:'منتج مميز مناسب للاطفال من سن ',rate:'6',stock:10,sale:'70%',age:'2-5 شهور'},
+          {id:5,type:'قميص',img:'boys/4.jpg',disc:'منتج مميز مناسب للاطفال من سن ',rate:'10',stock:10,sale:'30%',age:'2-5 أسبوع'}];   
+        for slide in slides
+          .slides
+           .sliderCount#sliderCount
+            .disc
+             h3 عرض ليوم واحد فقط 
+             h1=slide.type 
+            .brand-disc=slide.disc
+            .brand-age=slide.age
+            button.btn تسوق الأن
+
+           img(src="img/brand/" +slide.img)
+           span.deal عرض اليوم
+            .sale خصم
+             p=slide.sale
+      .actions
+        span.prevBtn#prevBtn.fa.fa-angle-right
+        span.bullets-container#bullets-container
+        span.nextBtn#nextBtn.fa.fa-angle-left
+
+
+
+
+    
+
+                    
+                
+            

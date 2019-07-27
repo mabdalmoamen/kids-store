@@ -1,0 +1,59 @@
+ .offer{
+      float: $floatR;
+      width: 100%;
+      height: 500px;
+      text-align: center;
+      overflow: hidden;
+      margin-bottom: 20px;
+    border-bottom-right-radius: 50%;
+        border-top-left-radius: 10%;
+
+
+      .offer-sale{
+       position: relative;
+       margin-left: 10px;
+      overflow: hidden;
+      max-height:500px;
+      min-height:500px;
+       h2{
+        text-align: right;
+        border:none;
+        background: $hotColor;
+
+    border-bottom-right-radius: 50%;
+    border-top-left-radius: 50%;
+    margin: 0;
+       }
+      img{
+      min-height:500px;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    
+      }
+      .info{
+        position: absolute;
+    z-index: 1;
+    top: 180px;
+    left: 41%;
+    text-align: center;
+    background: orange;
+    width: 200px;
+    height: 200px;
+    line-height: 30px;
+    padding: 39px;
+    opacity: .5;
+   
+    border-bottom-right-radius: 50%;
+    border-top-left-radius: 50%;
+    h2{
+      border:none;
+    }
+    button{
+      @extend .btn;
+    }
+}
+    }
+
+
+    }

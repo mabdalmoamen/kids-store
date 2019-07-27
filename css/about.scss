@@ -1,0 +1,98 @@
+
+//about
+.about{
+  width: 100%;
+    margin-left: 10px;
+  float: $floatR;
+  border-bottom-left-radius: 20%;
+      border-top-right-radius: 20%;
+    border-bottom-right-radius:20%;
+    border-top-left-radius:20%;
+    background: $color;
+    background: url(../img/bg2.jpg)  no-repeat fixed center;
+    background-size: cover;
+    padding: 30px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    h2{
+      display: inline;
+    }
+  .person-info{
+    margin-right: 10px;
+    background: $bg;
+    overflow: hidden;
+    
+    border-bottom-right-radius: 50%;
+    border-top-left-radius: 50%;
+    margin-bottom: 10px;
+    padding: 5px;
+    margin-top: 20px;
+    img{
+          float: $floatR;
+          height: 100px;
+          width: 100px;
+          border-radius: 50%;
+          border-bottom-left-radius: 50%;
+      border-top-right-radius: 50%;
+    border-bottom-right-radius: 0;
+    border-top-left-radius: 0;
+    margin-left: 10px;
+
+    }
+    .info{
+        margin-top: 10px;
+        .name{
+          @extend .btn;
+        }
+        .disc{
+          margin-bottom: 10px;
+          @extend .btn;
+          display: block;
+        }
+        a{
+            margin-left: 10px;
+            height: 25px;
+            width: 25px;
+            @extend .btn;
+            margin-bottom: 0;
+            font-size: 16px;
+
+        }
+        .social-facebook  {
+  border: 2px solid #3b5998 !important;
+  color: #3b5998 !important;
+}
+
+.social-facebook:hover {
+  background: #3b5998 !important;
+  color:#fff!important;
+}
+
+.social-instagram  {
+  border: 2px solid #517fa4 !important;
+  color: #517fa4 !important;
+}
+
+.social-instagram:hover {
+  background: #517fa4 !important;
+  color:#fff!important;
+}
+.social-twitter  {
+  border: 2px solid #00aced !important;
+  color: #00aced !important;
+}
+
+.social-twitter:hover {
+  color:#fff!important;
+  background: #00aced !important;
+}
+        .phone{
+          float: $floatL;
+        @extend .btn;
+            background: $hotColor; 
+            color:$bg; 
+            padding: 10px;      }
+    }
+  }
+
+}

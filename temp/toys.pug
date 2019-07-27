@@ -1,0 +1,24 @@
+.clear-fix
+.boys-brand
+    h2 نشط ذاكرة أولادك بألعاب مختلفة ..!
+    -
+      var toys=[
+        {id:1,type:'اسم اللعبة ',img:'1.jpg',price:'20 جنيها',rate:'6',stock:10},
+        {id:2,type:'اسم اللعبة ',img:'5.jpg',price:'20 جنيها',rate:'6',stock:10},
+        {id:3,type:'اسم اللعبة ',img:'2.jpg',price:'30 جنيها ',rate:'5',stock:10},
+        {id:4,type:'اسم اللعبة ',img:'3.jpg',price:'100 جنيها',rate:'6',stock:10},
+        {id:5,type:'اسم اللعبة ',img:'4.jpg',price:'200 جنيها',rate:'10',stock:10}];   
+    for toy in toys
+          .col-6.col-sm-6
+            .single-brand(class=  toys.id==1?'first':'' )
+                img(src="img/brand/toys/" + toy.img).single
+                .brand-info
+                 span.type.col-6=toy.type
+                 span.price.col-6=toy.price
+                .action
+                 .rate.col-6
+                  ul
+                   -for(i=1;i<=toy.rate && toy.rate<=10 ;i++ )
+                    li.fa.fa-rate-o
+                    
+                 a(href="single-toys.html") تفاصيل أكثر

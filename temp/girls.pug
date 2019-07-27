@@ -1,0 +1,27 @@
+.girls-brand
+    h2 تسوق  منتجات   بناتك...!
+    p لوريم ابسم 
+    -
+      var girls=[
+        {id:1,type:'فستان',img:'1.jpg',price:'20 جنيها',rate:'6',stock:10,age:'2-5 شهور'},
+        {id:2,type:'فستان',img:'5.jpg',price:'20 جنيها',rate:'6',stock:10,age:'2-10 شهور'},
+        {id:3,type:'فستان',img:'2.jpg',price:'30 جنيها ',rate:'5',stock:10,age:'2-5 سنوات'},
+        {id:4,type:'فستان',img:'3.jpg',price:'100 جنيها',rate:'6',stock:10,age:'2-5 شهور'},
+        {id:5,type:'فستان',img:'4.jpg',price:'200 جنيها',rate:'10',stock:10,age:'2-5 أسبوع'}];   
+    for girl in girls
+          .col-3.col-sm-6
+            div.single-brand(class=  girl.id==1?'first':'' )
+                img(src="img/brand/girls/" + girl.img).single
+                .brand-info
+                 span.type=girl.type
+                 span.age
+                  span مقاس:
+                   span=girl.age 
+                 span.price=girl.price
+                .action
+                 .rate
+                  ul
+                   -for(i=1;i<=girl.rate && girl.rate<=10 ;i++ )
+                    li.fa.fa-rate-o
+                    
+                 a(href="single-girls.html") تفاصيل أكثر

@@ -1,0 +1,19 @@
+
+.navbar
+	.col-12
+		.nav
+			ul
+				li.active 
+					a(href="index.html") الرئيسية	
+					
+				-
+					var links=[
+						{link:'boys.html',title:'براند ولاد	'},
+						{link:'girls.html',title:'براند بناتي'},
+						{link:'toys.html',title:'ألعاب	'},
+						{link:'#',title:'اكسسوار'},
+						{link:'#',title:'من نحن	'},
+						{link:'#',title:'اتصل بنا  '}];
+				for link in links
+						li
+							a(href=link.link)=link.title

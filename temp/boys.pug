@@ -1,0 +1,27 @@
+.clear-fix
+.boys-brand
+    h2 تسوق  منتجات  الاولاد...!
+    -
+      var boys=[
+        {id:1,type:'قميص',img:'1.jpg',price:'20 جنيها',rate:'6',stock:10,age:'2-5 شهور'},
+        {id:2,type:'قميص',img:'5.jpg',price:'20 جنيها',rate:'6',stock:10,age:'2-10 شهور'},
+        {id:3,type:'قميص',img:'2.jpg',price:'30 جنيها ',rate:'5',stock:10,age:'2-5 سنوات'},
+        {id:4,type:'قميص',img:'3.jpg',price:'100 جنيها',rate:'6',stock:10,age:'2-5 شهور'},
+        {id:5,type:'قميص',img:'4.jpg',price:'200 جنيها',rate:'10',stock:10,age:'2-5 أسبوع'}];   
+    for boy in boys
+          .col-3.col-sm-6
+            div.single-brand(class=  boy.id==1?'first':'' )
+                img(src="img/brand/boys/" + boy.img).single
+                .brand-info
+                 span.type=boy.type
+                 span.age
+                  span مقاس:
+                   span=boy.age 
+                 span.price=boy.price
+                .action
+                 .rate
+                  ul
+                   -for(i=1;i<=boy.rate && boy.rate<=10 ;i++ )
+                    li.fa.fa-rate-o
+                    
+                 a(href="single-boys.html") تفاصيل أكثر
